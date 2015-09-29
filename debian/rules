@@ -11,4 +11,5 @@ DESTDIR = debian/box
 
 override_dh_install:
 	install -m 755 -d $(DESTDIR)/usr/bin
-	install -m 755 box.phar $(DESTDIR)/usr/bin/box
+	install -m 755 box.phar $(DESTDIR)/usr/bin
+	install -m 755 debian/wrapper.sh $(DESTDIR)/usr/bin/box

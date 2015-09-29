@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+%:
+	dh $@
+
+DESTDIR = debian/box
+
+override_dh_install:
+	install -m 755 -d $(DESTDIR)/usr/bin
+	install -m 755 box.phar $(DESTDIR)/usr/bin/box

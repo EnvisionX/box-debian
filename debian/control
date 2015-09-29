@@ -1,0 +1,26 @@
+Source: box
+Section: php
+Priority: extra
+Maintainer: Aleksey Morarash <aleksey.morarash@envisionx.co>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/EnvisionX/box-debian
+Vcs-Browser: https://github.com/EnvisionX/box-debian
+Vcs-Git: https://github.com/EnvisionX/box-debian.git
+
+Package: box
+Architecture: all
+Depends: php5-cli
+Description: An application for building and managing Phars.
+ The Box application simplifies the Phar building process.
+ Out of the box (no pun intended), the application can do
+ many great things:
+ .
+ - Add, replace, and remove files and stubs in existing Phars.
+ - Extract a whole Phar, or cherry pick which files you want.
+ - Retrieve information about the Phar extension, or a Phar file.
+ - List the contents of a Phar.
+ - Verify the signature of an existing Phar.
+ - Generate RSA (PKCS#1 encoded) private keys for OpenSSL signing.
+ - Extract public keys from existing RSA private keys.
+ - Use Git tags and short commit hashes for versioning.

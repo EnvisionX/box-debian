@@ -1,3 +1,10 @@
+box (2.6.0) unstable; urgency=low
+
+  * add wrapper script for phar.readonly PHP option
+  * add 2.5.3 box binary
+
+ -- Oleksii Klitovchenko <oleksii.klitovchenko@envisionx.co>  Sun, 22 Mar 2020 09:58:24 +0200
+
 box (2.5.3) unstable; urgency=low
 
   * Initial release.
